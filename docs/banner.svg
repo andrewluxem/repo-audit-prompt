@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 300" width="900" height="300" role="img" aria-labelledby="t d">
+<title id="t">repo-audit-prompt</title>
+<desc id="d">Three panels. 1, the README's warning: Cloning into a subdirectory is enough to load the target's skills into your auditing agent, and "No API keys set" is not "no credentials present." 2, what the generated prompt does first: it qualifies the host with nine probes (SSH, forge auth, cloud creds, registry auth, agent config, credential files, OS keychain, private network reach, ephemerality). Pass all nine: Tier 1. Fail any: Tier 0. Tier 0: no clone, ever. 3, the prompt template's sections: TIER 0 BRANCH, TIER 1 BRANCH, DELIVERABLE, with 6. VERDICT: GREEN | CONDITIONAL | RED. and 7. Registry entry, as a chat draft. A report can recommend.</desc>
+<style>
+.serif{font-family:Georgia,"Times New Roman",serif}
+.sans{font-family:-apple-system,"Segoe UI",Helvetica,Arial,sans-serif}
+.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace}
+.lab{font-size:10px;letter-spacing:1.8px;font-weight:600}
+.cap{font-size:11.5px;fill:#8b9096}
+.hl{fill:none;stroke-width:1.5;opacity:0}
+.h1{animation:h1 12s infinite}
+.h2{animation:h2 12s infinite}
+.h3{animation:h3 12s infinite}
+.r1{animation:r1 12s infinite}
+.r2{animation:r2 12s infinite}
+.rb{animation:rb 12s infinite}
+.rc{animation:rc 12s infinite}
+.rd{animation:rd 12s infinite}
+.re{animation:re 12s infinite}
+.rf{animation:rf 12s infinite}
+.rg{animation:rg 12s infinite}
+@keyframes h1{0%,16.7%{opacity:0}18.7%,42.4%{opacity:1}44.1%,100%{opacity:0}}
+@keyframes h2{0%,16.7%,18.7%,44.1%{opacity:0}45.8%,67.8%{opacity:1}69.5%,100%{opacity:0}}
+@keyframes h3{0%,16.7%,18.7%,69.5%{opacity:0}71.2%,94.9%{opacity:1}96.6%,100%{opacity:0}}
+@keyframes r1{0%,16.7%{opacity:1}18.7%,20.4%{opacity:0}22.1%,100%{opacity:1}}
+@keyframes r2{0%,16.7%{opacity:1}18.7%,30.6%{opacity:0}32.2%,100%{opacity:1}}
+@keyframes rb{0%,16.7%{opacity:1}18.7%,45%{opacity:0}46.6%,100%{opacity:1}}
+@keyframes rc{0%,16.7%{opacity:1}18.7%,53.4%{opacity:0}55.1%,100%{opacity:1}}
+@keyframes rd{0%,16.7%{opacity:1}18.7%,61%{opacity:0}62.7%,100%{opacity:1}}
+@keyframes re{0%,16.7%{opacity:1}18.7%,72.1%{opacity:0}73.7%,100%{opacity:1}}
+@keyframes rf{0%,16.7%{opacity:1}18.7%,79.7%{opacity:0}81.4%,100%{opacity:1}}
+@keyframes rg{0%,16.7%{opacity:1}18.7%,87.3%{opacity:0}89%,100%{opacity:1}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+<rect width="900" height="300" fill="#141618"/>
+
+<text x="32" y="50" class="serif" font-size="28" fill="#e4dfd4">repo-audit-prompt</text>
+<text x="283" y="50" class="sans" font-size="13.5" fill="#a9adb2">Agent skill that generates a tier-gated, 8-check security audit prompt</text>
+
+<g>
+<text x="32" y="88" class="sans lab" fill="#a39bbd">1 · CLONE AND BE CAREFUL</text>
+<rect x="32" y="98" width="236" height="152" rx="3" fill="#1b1e21" stroke="#2e3237"/>
+<rect class="hl h1" x="32" y="98" width="236" height="152" rx="3" stroke="#a39bbd"/>
+<text x="44" y="115" class="mono" font-size="10" fill="#8b9096">README.md</text>
+<line x1="33" y1="123" x2="267" y2="123" stroke="#2e3237"/>
+<g class="r1"><rect x="44" y="136" width="2.5" height="38" fill="#c8963e"/><text x="54" y="145" class="sans" font-size="10.5" fill="#e4dfd4">Cloning into a subdirectory is enough</text><text x="54" y="159" class="sans" font-size="10.5" fill="#e4dfd4">to load the target's skills into your</text><text x="54" y="173" class="sans" font-size="10.5" fill="#e4dfd4">auditing agent.</text></g>
+<g class="r2"><rect x="44" y="190" width="2.5" height="24" fill="#c8963e"/><text x="54" y="199" class="sans" font-size="10.5" fill="#e4dfd4">"No API keys set" is not</text><text x="54" y="213" class="sans" font-size="10.5" fill="#e4dfd4">"no credentials present."</text></g>
+<text x="32" y="272" class="sans cap">Your laptop is the wrong place to audit.</text>
+</g>
+
+<g>
+<text x="288" y="88" class="sans lab" fill="#c8963e">2 · QUALIFY THE HOST FIRST</text>
+<rect x="288" y="98" width="306" height="152" rx="3" fill="#17191c" stroke="#2e3237"/>
+<rect class="hl h2" x="288" y="98" width="306" height="152" rx="3" stroke="#c8963e"/>
+<text x="300" y="115" class="mono" font-size="10" fill="#8b9096">README.md · What the generated prompt does</text>
+<line x1="289" y1="123" x2="593" y2="123" stroke="#2e3237"/>
+<g class="rb"><text x="300" y="143" class="mono" font-size="10" fill="#e4dfd4">SSH, forge auth, cloud creds, registry auth,</text><text x="300" y="157" class="mono" font-size="10" fill="#e4dfd4">agent config, credential files, OS keychain,</text><text x="300" y="171" class="mono" font-size="10" fill="#e4dfd4">private network reach, ephemerality</text></g>
+<g class="rc"><text x="300" y="195" class="mono" font-size="10" fill="#e4dfd4" font-weight="700">Pass all nine: Tier 1. Fail any: Tier 0.</text></g>
+<g class="rd"><text x="300" y="219" class="mono" font-size="10" fill="#c8963e">Tier 0: no clone, ever.</text></g>
+<rect class="rc" x="296" y="185" width="250" height="14" fill="none" stroke="#c8963e" stroke-dasharray="3 2"/>
+<text x="288" y="272" class="sans cap">The host is checked before the repo is.</text>
+</g>
+
+<g>
+<text x="614" y="88" class="sans lab" fill="#93ad8c">3 · ONE PROMPT TO PASTE</text>
+<rect x="614" y="98" width="254" height="152" rx="3" fill="#17191c" stroke="#2e3237"/>
+<rect class="hl h3" x="614" y="98" width="254" height="152" rx="3" stroke="#93ad8c"/>
+<text x="626" y="115" class="mono" font-size="10" fill="#8b9096">prompt-template.md · full audit</text>
+<line x1="615" y1="123" x2="867" y2="123" stroke="#2e3237"/>
+<g class="re"><text x="626" y="143" class="mono" font-size="10" fill="#a9adb2">=== TIER 0 BRANCH ===</text><text x="626" y="157" class="mono" font-size="10" fill="#a9adb2">=== TIER 1 BRANCH ===</text><text x="626" y="171" class="mono" font-size="10" fill="#a9adb2">=== DELIVERABLE ===</text></g>
+<g class="rf"><text x="626" y="191" class="mono" font-size="10" fill="#e4dfd4">6. VERDICT: GREEN | CONDITIONAL | RED.</text><text x="626" y="205" class="mono" font-size="10" fill="#e4dfd4">7. Registry entry, as a chat draft.</text></g>
+<g class="rg"><line x1="626" y1="217.5" x2="856" y2="217.5" stroke="#2e3237"/><text x="626" y="236" class="mono" font-size="10" fill="#93ad8c">A report can recommend.</text></g>
+<text x="614" y="272" class="sans" font-size="11.5" fill="#93ad8c">Run it elsewhere. A person decides.</text>
+</g>
+</svg>
