@@ -1,3 +1,5 @@
+<p align="center"><img src="assets/banner.svg" alt="repo-audit-prompt: Agent skill that generates a tier-gated, 8-check security audit prompt for third-party repos and agent skills before you adopt them." width="100%"></p>
+
 # repo-audit-prompt
 
 An agent skill that generates a ready-to-paste prompt for a **tier-gated security audit of a third-party GitHub repo** (code, MCP server, plugin, or agent skill) before you adopt it.
