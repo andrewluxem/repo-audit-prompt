@@ -1,4 +1,4 @@
-<p align="center"><img src="assets/banner.svg" alt="repo-audit-prompt: Agent skill that generates a tier-gated, 8-check security audit prompt for third-party repos and agent skills before you adopt them." width="100%"></p>
+<p align="center"><img src="docs/banner.svg" alt="repo-audit-prompt: Agent skill that generates a tier-gated, 8-check security audit prompt for third-party repos and agent skills before you adopt them."></p>
 
 # repo-audit-prompt
 
